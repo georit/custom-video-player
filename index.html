@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Video Player</title>
+    <!-- ************** CSS ************** -->
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="http://www.google.com/s2/favicons?domain=google.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/progress.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Custom Video Player</h1>
+    <video src="./vids/Creating A 3D Logo in Affinity Designer on iPad.mov" id="video" class="screen"
+        poster="./img/poster.png"></video>
+    <div class="controls">
+        <button class="btn" id="play"><i class="fas fa-play-circle"></i></button>
+        <button class="btn" id="stop"><i class="fa fa-stop-circle"></i></button>
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        <span class="timestamp" id="timestamp">00:00</span>
+        <button class="btn" id="expand-video"><i class="fas fa-expand"></i></button>
+    </div>
+
+    <!-- ************** SCRIPTS ************** -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

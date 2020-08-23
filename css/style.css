@@ -1,0 +1,141 @@
+/* ********** CUSTOM PROPERTIES ********** */
+
+:root {
+  --primary-background-color: #666666;
+  --secondary-background-color: #000000;
+  --tertiary-background-color: #333333;
+  --primary-color: #ffffff;
+  --secondary-color: #28a745;
+  --tertiary-color: #dc3545;
+}
+
+/* ********** GENERAL ********** */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-background-color);
+}
+
+/* ********** TITLE ********** */
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+/* ********** SCREEN ********** */
+
+.screen {
+  cursor: pointer;
+  width: 60%;
+  background-color: var(--secondary-background-color) !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* ********** CONTROLS ********** */
+
+.controls {
+  background: var(--tertiary-background-color);
+  color: var(--primary-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 60%;
+}
+
+.controls .btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .btn:focus {
+  outline: none;
+}
+
+.controls .fa-play-circle {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.controls .fa-stop-circle {
+  color: var(--tertiary-color);
+  font-size: 2rem;
+}
+
+.controls .fa-stop-circle:active {
+  color: var(--primary-color);
+}
+
+.controls .fa-pause-circle {
+  color: var(--primary-color);
+}
+
+.controls .timestamp {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.controls .fa-expand {
+  font-size: 2rem;
+}
+
+.controls .fa-expand:hover {
+  color: var(--primary-color);
+}
+
+.controls .fa-compress:hover {
+  color: var(--primary-color);
+}
+
+/* ********** MEDIA QUERIES ********** */
+
+/* Mobile Phones - Portrait Mode */
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .screen,
+  .controls {
+    width: 90%;
+  }
+
+  .controls .fa-play-circle {
+    font-size: 1.5rem;
+  }
+
+  .controls .fa-stop-circle {
+    font-size: 1.5rem;
+  }
+
+  .controls .fa-pause-circle {
+    font-size: 1.5rem;
+  }
+
+  .controls .fa-expand {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile Phones - Landscape Mode */
+@media only screen and (max-width: 800px) and (orientation: Landscape) {
+  body {
+    max-height: 570px;
+  }
+}
